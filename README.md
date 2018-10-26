@@ -5,7 +5,7 @@ A recreation of the NYT Articles Search
 
 ## Demo
 
-Check out the deployed demo [here.] (https://nyt-articles-react.herokuapp.com/)
+Check out the deployed demo [here.](https://nyt-articles-react.herokuapp.com/)
 
 # Getting Started
 
