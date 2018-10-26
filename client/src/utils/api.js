@@ -14,6 +14,7 @@ const api = {
   },
   // Saves a new article to the db
   saveArticle: function(articleObj) {
+    console.log(articleObj);
     return axios.post("/api/saved", articleObj);
   },
   // Deletes an article from the db

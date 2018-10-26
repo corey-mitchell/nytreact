@@ -4,7 +4,7 @@ module.exports = {
   // this method handles finding all articles in the db
   find: (req, res) => {
     console.log("Gathering saved articles from the db");
-    Article.find().then(doc => {
+    Article.find().then((doc) => {
       res.json(doc);
     }).catch(err => {
       res.json(err);
@@ -14,10 +14,10 @@ module.exports = {
   insert: (req, res) => {
     console.log("Adding saved artice to the db");
     console.log("req.body: ", req.body);
-    Article.create(req.body).then(doc => {
+    Article.create(req.body).then((doc) => {
       res.json(doc);
       console.log("doc: ", doc);
-    }).catch(err => {
+    }).catch((err) => {
       res.json(err);
     });
   },
@@ -26,10 +26,10 @@ module.exports = {
     console.log("Deleting a saved article from the db");
     Article.remove({
       _id: req.params.id
-    }).then(doc => {
+    }).then((doc) => {
       res.json(doc);
       console.log("doc: ", doc);
-    }).catch(err => {
+    }).catch((err) => {
       res.json(err);
     });
   }
