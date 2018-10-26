@@ -1,7 +1,8 @@
 # nytreact
 
 ## Description
-A recreation of the NYT Articles Search
+
+A React.js app that allows users to search for New York Times articles. After performing a search, the user will see article results including the name of the article, the date and time of publishing, and a button linking to the article source. Finally, users are able to add and remove articles from a saved articles section. 
 
 ## Demo
 
@@ -18,7 +19,29 @@ git clone To install the application, please run the following commands into you
 
 cd nytreact
 
-npm install
+yarn install
+```
+
+## Running Locally
+
+### Dependencies
+
+You will need to yarn install the following node modules:
+
+1. express
+2. mongoose
+3. body-parser
+4. bluebird
+5. axios
+6. react
+7. react-dom
+8. react-router-dom
+9. react-scripts
+
+Since I have included two package.json files, you do not need to install dependencies by name. Simply run the following in the root of your directory *as well as* in the Client folder:
+
+```
+yarn install
 ```
 
 ## Setting Up Local Database
@@ -41,6 +64,12 @@ The name of the database we are using in the above photo is 'nyt-search'. Change
 ```
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/<yourDBnamehere>";
 ```
+
+## Screenshots
+
+**Article search and results**
+
+![screenshot-1](https://i.imgur.com/eiN3oU2.png)
 
 ## Author
 
